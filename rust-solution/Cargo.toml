@@ -1,0 +1,8 @@
+[package]
+name = "waldo-rust"
+version = "0.1.0"
+authors = ["Blas Rabella <blas.rabella@gmail.com>"]
+
+[dependencies]
+image = "*"
+rayon = "1.0"
