@@ -6,3 +6,5 @@ authors = ["Blas Rabella <blas.rabella@gmail.com>"]
 [dependencies]
 image = "*"
 rayon = "1.0"
+ndarray = "0.11.0"
+

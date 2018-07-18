@@ -1,3 +1,5 @@
+#[macro_use]
+extern crate ndarray;
 extern crate image;
 extern crate rayon;
 
@@ -21,9 +23,10 @@ fn main() {
             if check_error(err, &img2) {
                 println!("Found template at pixel [{:?}]", (i, j))
             } else {
-                println!("Template not found in image")
+                println!("Template not found as the error [{:?}] at [{:?}]is too high", err, (i,j))
             }
         }
+
         _ => help(),
     }
 }
