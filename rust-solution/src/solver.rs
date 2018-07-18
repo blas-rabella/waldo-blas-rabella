@@ -41,7 +41,7 @@ fn check_line(
         .map(|i| {
             let sub_image = a1.slice(s![j..(j + h2), i..(i + w2)]);
             let err = compute_error(&sub_image, &a2);
-            (j, i, err)
+            (i, j, err)
         })
         .min_by(|(_, _, sq1), (_, _, sq2)| sq1.cmp(sq2))
 }
